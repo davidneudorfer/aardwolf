@@ -61,16 +61,14 @@ fn app(config: config::Config) -> Result<Rocket, Error> {
         aardwolf::routes::app::home_redirect,
     ]);
 
-    // 
-    // Adding static routes for develpment
-    // 
-
     #[cfg(debug_assertions)]
     routes.extend(routes![
         // webroot/favicon
         aardwolf::routes::app::webroot,
         // emoji
         aardwolf::routes::app::emoji,
+        // fork_awesome
+        aardwolf::routes::app::fork_awesome,        
         // images
         aardwolf::routes::app::images,
         // javascript
