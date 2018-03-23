@@ -8,7 +8,7 @@
 // multipurpose
 pub struct Lang_multipurpose {
 	instance_title: String,
-	return: String,
+	go_back: String,
 	submit: String,
 	comment_placeholder: String,
 }
