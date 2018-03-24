@@ -73,4 +73,3 @@ fn themes(file: PathBuf) -> Result<NamedFile, NotFound<String>> {
     let path = Path::new("web/themes/").join(file);
     NamedFile::open(&path).map_err(|_| NotFound(format!("Bad path: {:?}", path)))
 }
-
