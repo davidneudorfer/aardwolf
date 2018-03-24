@@ -59,7 +59,6 @@ fn images(file: PathBuf) -> Result<NamedFile, NotFound<String>> {
 }
 
 // Javascript folder
->>>>>>> origin/a-i18n-langages
 #[cfg(debug_assertions)]
 #[get("/javascript/<file..>")]
 fn javascript(file: PathBuf) -> Result<NamedFile, NotFound<String>> {
@@ -68,7 +67,6 @@ fn javascript(file: PathBuf) -> Result<NamedFile, NotFound<String>> {
 }
 
 // Stylesheets folder
->>>>>>> origin/a-i18n-langages
 #[cfg(debug_assertions)]
 #[get("/stylesheets/<file..>")]
 fn stylesheets(file: PathBuf) -> Result<NamedFile, NotFound<String>> {
